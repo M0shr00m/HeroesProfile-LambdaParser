@@ -3,14 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heroes.ReplayParser", "Heroes.ReplayParser\Heroes.ReplayParser\Heroes.ReplayParser.csproj", "{B57C14B6-FCAF-45A3-B85A-3D461D97C507}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MpqTool", "Heroes.ReplayParser\MpqTool\MpqTool.csproj", "{D12EBAEF-F8FF-4830-9AE2-99EB014EE2E7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotslambda", "hots-lambda\hotslambda.csproj", "{8DCB468D-1119-405D-9BEA-15E497E20FA6}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B57C14B6-FCAF-45A3-B85A-3D461D97C507} = {B57C14B6-FCAF-45A3-B85A-3D461D97C507}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B57C14B6-FCAF-45A3-B85A-3D461D97C507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B57C14B6-FCAF-45A3-B85A-3D461D97C507}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B57C14B6-FCAF-45A3-B85A-3D461D97C507}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B57C14B6-FCAF-45A3-B85A-3D461D97C507}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D12EBAEF-F8FF-4830-9AE2-99EB014EE2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D12EBAEF-F8FF-4830-9AE2-99EB014EE2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D12EBAEF-F8FF-4830-9AE2-99EB014EE2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
