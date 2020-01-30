@@ -15,14 +15,14 @@ namespace hotslambda
     public class Function
     {
         [LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
-        public Object FunctionHandler(IDictionary<string, string> dict, ILambdaContext context)
+        public object FunctionHandler(IDictionary<string, string> dict, ILambdaContext context)
         {
             return MainAsync(dict["input"], dict["access"], dict["secret"]).GetAwaiter().GetResult();
         }
 
         static readonly string Prefix = "http://hotsapi.s3.amazonaws.com/";
 
-        public static async System.Threading.Tasks.Task<Object> MainAsync(string uri, string AWSAccessKey, string AWSSecretKey)
+        public static async System.Threading.Tasks.Task<object> MainAsync(string uri, string AWSAccessKey, string AWSSecretKey)
         {
             var sp = uri.Split('/');
             uri = Prefix + sp.Last();
@@ -77,7 +77,7 @@ namespace hotslambda
             return ToJson(result.Item2);
         }
 
-        public static Object ToJson(Replay replay)
+        public static object ToJson(Replay replay)
         {
             var obj = new
             {
