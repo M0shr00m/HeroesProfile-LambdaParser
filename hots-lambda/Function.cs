@@ -116,7 +116,9 @@ namespace hotslambda
                               hero_skin = p.SkinAndSkinTintAttributeId,
                               mount_title = p.MountAndMountTint,
                               mount = p.MountAndMountTintAttributeId,
+                              spray_title = p.Spray,
                               spray = p.SprayAttributeId,
+                              voice_line_title = p.VoiceLine,
                               voice_line = p.VoiceLineAttributeId,
                           }
             };
