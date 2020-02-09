@@ -109,7 +109,17 @@ namespace hotslambda
                               party = p.PartyValue,
                               talents = p.Talents.Select(t => t.TalentName),
                               score = p.ScoreResult,
-                              staff = p.IsBlizzardStaff
+                              staff = p.IsBlizzardStaff,
+                              announcer = p.AnnouncerPackAttributeId,
+                              banner = p.BannerAttributeId,
+                              skin_title = p.SkinAndSkinTint,
+                              hero_skin = p.SkinAndSkinTintAttributeId,
+                              mount_title = p.MountAndMountTint,
+                              mount = p.MountAndMountTintAttributeId,
+                              spray_title = p.Spray,
+                              spray = p.SprayAttributeId,
+                              voice_line_title = p.VoiceLine,
+                              voice_line = p.VoiceLineAttributeId,
                           }
             };
             return obj;
